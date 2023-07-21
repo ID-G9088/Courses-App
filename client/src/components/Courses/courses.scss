@@ -1,0 +1,46 @@
+.course-list {
+    border: 3px solid skyblue;
+    
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .search-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5vw;
+    }
+
+    @media (max-width: 850px) {
+      .search-panel {
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 15px;
+      }
+      
+      .search-form {
+      width:100%;
+      }
+
+      .btn-add {
+      max-width: 100%;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .search-form {
+        width:100%;
+        flex-direction: column;
+
+        .btn {
+          max-width: 100%;
+        }
+      }
+    }
+
+}
+
+

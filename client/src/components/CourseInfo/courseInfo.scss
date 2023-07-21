@@ -1,0 +1,85 @@
+.course-info {
+  border: 3px solid aqua;
+  min-height: 700px;
+
+  .back-arrow a{
+    text-decoration: none;
+    color: black;
+
+    &::before {
+      content: '< ';
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    margin: 40px 0;
+    text-align:center;
+  }
+
+  &__main-block {
+    display:flex;
+    column-gap: 80px;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  &__description {
+      width: 50%;
+      padding:0;
+      margin:0;
+      text-align: justify;
+  }
+
+  &__features {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    row-gap: 20px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__authors {
+      display:flex;
+      flex-direction: column;
+      row-gap: 20px;
+  }
+
+  &__authors-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__authors-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom:10px;
+  }
+
+  @media (max-width: 850px) {
+    &__main-block {
+      flex-direction: column;
+      gap:30px;
+    }
+
+    &__description {
+      width: 100%;
+    }
+
+    &__features {
+      row-gap:5px;
+    }
+
+    &__authors {
+      row-gap: 0;
+    }
+
+    &__authors-item {
+      margin-bottom:0;
+    }
+  }
+}

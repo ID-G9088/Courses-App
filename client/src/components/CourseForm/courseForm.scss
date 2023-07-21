@@ -1,0 +1,140 @@
+@import '../../common/variables.scss';
+
+.add-course {
+	border:3px solid blueviolet;
+	&__header {
+
+  label {
+		font-size: 20px;
+		margin-bottom: 10px;
+		display: block;
+		width: 100%;
+		}
+	
+	.header-controls {
+		 display: flex;
+		 flex-wrap: wrap;
+		 margin-bottom: 20px;
+
+		&__title-input {
+			margin-right: auto;
+		}
+
+		&__cancel-btn {
+			margin-right: .5em;
+		}
+	}
+}
+
+	&__description {
+		margin-top: 10px;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+		height: 100px;
+		display: block;
+		border: 3px solid yellow;
+		font-size: $font-size;
+
+	}
+
+	&__main {
+		border: 3px solid black;
+		display:flex;
+		flex-wrap: wrap;
+		font-size: $font-size;
+
+		.block {
+			width: 50%;
+			box-sizing: border-box;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+
+			&__title {
+				text-align: center;
+				font-size: 22px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+
+			label {
+				align-self: flex-start;
+				margin-bottom: 10px;
+			}
+
+			input {
+				max-width: none;
+				box-sizing: border-box;
+				margin-bottom: 10px;
+			}
+
+			&__duration-output {
+				align-self: flex-start;
+				font-size: clamp(1rem, 2vw, 1.3rem);
+			}
+
+			&__authors-list {
+				padding: 0;
+				margin: 0;
+				width:90%;
+			}
+
+			&__authors-item {
+				margin-bottom: 5px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+				.btn {
+					width: 50%;
+				}
+				
+			}
+
+			&__author-name {
+				width: 45%;
+				word-wrap: break-word;
+			}
+		}
+	}
+
+	@media (max-width: 1250px) {
+		.header-controls {
+			flex-direction: column;
+
+			&__update-btn {
+				order: -2;
+				max-width: none;
+				margin-bottom: .7em;
+			}
+
+			&__cancel-btn {
+				order: -1;
+				max-width: none;
+				margin-bottom: 1.5em;
+			}
+
+			&__title-input {
+			max-width: none;
+			}
+		}
+	}
+
+	@media (max-width: 850px) {
+		&__main {
+			flex-direction: column;
+			align-items: center;
+
+			.block {
+				width: 100%;
+			}
+
+			.duration-block {
+				order: 999;
+			}
+		}
+	}
+
+	
+}

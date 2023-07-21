@@ -1,0 +1,19 @@
+.search-form {
+    display:flex;
+    justify-content: flex-start;
+    width: 50%;
+    gap: 5px;
+
+    label {
+      display: none;
+    }
+
+    @media (max-width:850px) {
+      input {
+        max-width:100%;
+        // flex-grow: 1;
+      }
+    }
+}
+
+

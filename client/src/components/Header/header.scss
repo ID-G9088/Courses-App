@@ -1,0 +1,25 @@
+.header {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__log-panel {
+      flex-basis: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap:10px;
+    }
+
+    &__user-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 450px) {
+      &__user-name {
+          display: none;
+      }
+    }
+}
