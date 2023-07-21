@@ -25,10 +25,10 @@
   }
 
   &__description {
-      width: 50%;
-      padding:0;
-      margin:0;
-      text-align: justify;
+    width: 50%;
+    padding:0;
+    margin:0;
+    text-align: justify;
   }
 
   &__features {
@@ -43,9 +43,9 @@
   }
 
   &__authors {
-      display:flex;
-      flex-direction: column;
-      row-gap: 20px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
   &__authors-list {

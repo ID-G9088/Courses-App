@@ -62,23 +62,21 @@
   .admin-btns {
     display: flex;
     column-gap: 5px;
-  }
-
-  .btn {
-    &-change {
+    
+    .btn {
       width: 40px;
-      background-image: url('../../../../resources/CourseCard/pencil.png') ;
-      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-    }
 
-    &-delete {
-      width: 40px;
-      background-image: url('../../../../resources/CourseCard/trash.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      &-change {
+        background-image: url('../../../../resources/CourseCard/pencil.png') ;
+        background-size: contain;
+      }
+  
+      &-delete {
+        background-image: url('../../../../resources/CourseCard/trash.png');
+        background-size: cover;
+      }
     }
   }
 }
